@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test{
+            width:100px;
+            height:100px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <!-- moving div -->
+    <div id="test"></div>
+    <button onclick="stopAnim()">Stop</button>
+    <script>
+        var a=0;
+        var clearTime = setInterval(anim,2000)
+        function anim(){
+            console.log("anim")
+            var division = document.getElementById('test')
+            division.style.marginLeft = a+"px"
+           
+        }
+
+        function stopAnim(){
+    clearInterval(clearTime)
+    console.log("Anim get stopped")
+}
+    </script>
+</body>
+</html>

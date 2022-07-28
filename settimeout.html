@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="counter"></div>
+   <script>
+  
+    // setTimeout(timer,6000)
+    // function timer(){
+    //     console.log("timer function called")
+    // }
+
+    // setTimeout(timer1,3000)
+    // function timer1(){
+    //     console.log("timer1 has called")
+    // }
+        
+    // setTimeout(() => {
+    //     console.log("timer2 has called")
+    // },4000)
+
+    // setTimeout(add,5000,30,40)
+    // function add(a,b){
+    //     console.log(a+b)
+    // }
+    
+var counter = document.getElementById('counter')
+for(let i=1; i<=11; i++){
+    setTimeout(function() {
+        console.log(i)
+        counter.innerText=i
+        if(i==10){
+            console.log("HAPPY INDEPENDENCE DAY")
+            counter.innerText="HAPPY INDEPENDENCE DAY"
+        }
+    },1000*i)
+}
+   </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+DOM- document object model
+createelement 
+getelementbyid
+getelementbyclassname
+getelementbytagsname
+
+setattribute
+addeventlistener
+classlist// recap
+
+day2:
+
+window utilities functions
+settimeout,setinterval
+
+alert,prompt,confirm
+
+events=> by addeventlistener
+
+settimeout:
+
+it will be implemented or executed after specific time.
+it will be exectued only once.
+
+syntax:settimeout(function,delay)
+
+delay => the timer(1000ms=1sec)
+
+we can perform some arithmetic operations also, by using settimeout
+
+cleartimeout:
+
+Setinterval:
+
+you can call a same function again and again after certain time period.
+
+setinterval(function,delay)
+
+alert,confirm and prompt
+
+alert=> box , which is giving some msg on the browser
+it has only one button called ok.
+
+we can perform some arithmetic operations by using alert
+
+confirm:=> it s also a box coming lika an alert, but it has 2 buttons(like yes or no)
+
+
+
+
